@@ -59,12 +59,12 @@ export default class RestaurantItem extends HTMLLIElement {
   }
 
   #getCategoryIconUrl(category) {
-    if (category === '한식') return './category-korean.png';
-    if (category === '중식') return './category-chinese.png';
-    if (category === '일식') return './category-japanese.png';
-    if (category === '양식') return './category-western.png';
-    if (category === '아시안') return './category-asian.png';
-    if (category === '기타') return './category-etc.png';
+    if (category === '한식') return './src/view/imgs/category-korean.png';
+    if (category === '중식') return './src/view/imgs/category-chinese.png';
+    if (category === '일식') return './src/view/imgs/category-japanese.png';
+    if (category === '양식') return './src/view/imgs/category-western.png';
+    if (category === '아시안') return './src/view/imgs/category-asian.png';
+    if (category === '기타') return './src/view/imgs/category-etc.png';
     return '';
   }
 
@@ -81,7 +81,7 @@ export default class RestaurantItem extends HTMLLIElement {
 
   #updateFavoriteIcon(isFavorite) {
     const iconImg = this.querySelector('.restaurant__favorite-button img');
-    iconImg.src = isFavorite ? './favorite-icon-filled.png' : './favorite-icon-lined.png';
+    iconImg.src = isFavorite ? './src/view/imgs/favorite-icon-filled.png' : './src/view/imgs/favorite-icon-lined.png';
   }
 
   #handleRestaurantItemClick() {
